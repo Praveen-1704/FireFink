@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+	  <run>
+		  <include name="functional">
+		  </include>
+		  <include name="integration"></include>
+		  <exclude name="integration"></exclude>
+	  </run>
+  </groups>
+    <classes>
+      <class name="testNG_Practice.Working_With_GroupExecution"/>
+      <class name="testNG_Practice.Group_Execution_Continution"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
